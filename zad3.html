@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        .banner__title{
+            border: 1px solid black;
+            height: 20vh;
+            width: auto;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .logo__img {
+            height: 10vh;
+        }
+        .body{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 70vh;
+            width: auto;
+        }
+        .advert{
+            border: 1px solid black;
+            height: 70vh;
+            width: 15vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .data{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .data__tile{
+            position: relative;
+            width: 20vw;
+            height: 16vh;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .data__tile:hover{
+            background-color: rgba(0, 0, 255, 0.486);
+            transform: scale(1.05);
+            transition: ease-in-out 0.5s;
+        }
+        .data__static{
+            position: static;
+            border: 1px solid green;
+        }
+        .del__btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 40px;
+            color: white;
+            background-color: rgb(255, 72, 72);
+            border: none;
+            padding: 6px 10px 6px 10px;
+        }
+        .footer{
+            height: 5vh;
+            width: auto;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="banner__title">
+        <img onClick="window.location.reload();" class="logo__img" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Sii_logo.jpg" alt="obrazek logo">
+    </section>
+
+    <section class="body">
+    <div class="advert"><p>REKLAMA</p></div>
+
+    <section class="data">
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr1</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr2</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr3</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr4</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr5</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr6</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr7</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr8</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr9</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr10</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr11</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+        <div class="data__tile">        
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="data__static">Dane nr12</p>
+            <button class="del__btn" onClick="deleteData(this)" >x</button>
+        </div>
+
+    </section>
+
+    <div class="advert"><p>REKLAMA</p></div>
+</section>
+
+    <section class="footer">
+        <p>Michał Jatkowski</p>
+    </section>
+
+
+</body>
+    <script>
+        function deleteData(e) {
+            e.parentElement.remove();
+            alert('usunięto dane');
+        }
+    </script>
+</html>
